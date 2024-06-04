@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <form action="#" class="signup" method="">
+              <div class="field">
+                <input type="text" placeholder="Name" required>
+              </div>
+                <div class="field">
+                  <input type="text" placeholder="Phone number" required>
+                </div>
+                <div class="field">
+                  <input type="text" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                  <input type="password" placeholder="Password" required>
+                </div>
+                <div class="field">
+                  <input type="password" placeholder="Confirm password" required>
+                </div>
+                <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Signup">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- partial -->
+          <script>
+            const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = () => {
+          loginForm.style.marginLeft = "-50%";
+          loginText.style.marginLeft = "-50%";
+        };
+        loginBtn.onclick = () => {
+          loginForm.style.marginLeft = "0%";
+          loginText.style.marginLeft = "0%";
+        };
+        signupLink.onclick = () => {
+          signupBtn.click();
+          return false;
+        };
+        
+          </script>
+        
+             
+    
+</body>
+</html>
